@@ -2,7 +2,7 @@
     font-family: "Source Sans Pro SemiBold";
     font-style: normal;
     font-weight: 400;
-  
+
     /* Браузер сначала попробует найти шрифт локально */
     src: local("Source Sans Pro SemiBold"),
          /* Если не получилось, загрузит woff2 */
@@ -13,7 +13,7 @@
     font-family: "Source Sans Pro Regular";
     font-style: normal;
     font-weight: 400;
-  
+
     /* Браузер сначала попробует найти шрифт локально */
     src: local("Source Sans Pro Regular"),
          /* Если не получилось, загрузит woff2 */
@@ -25,7 +25,7 @@ body{
     font-family: 'Source Sans Pro SemiBold';
 }
 
-l-wrapper{
+.l-wrapper{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -47,10 +47,23 @@ l-wrapper{
     margin-right: 12px;
 }
 
+.sidebar-icon{
+    display: flex;
+    padding: 12px;
+    background-color: #F2F4F8;
+}
+
+
 .sidebar-card{
     display: flex;
     padding: 12px;
     background-color: #F2F4F8;
+    border: none;
+    cursor: pointer;
+}
+
+.sidebar-card:hover {
+    background-color: #ddd;
 }
 
 .icon{
@@ -103,6 +116,11 @@ a{
     }
 }
 
+.tabcontent{
+    display: none;
+    align-items: center;
+}
+
 .table{
     width: 100%;
     text-align: center;
@@ -120,6 +138,31 @@ a{
 
 .table td{
     padding: 5px;
+}
+
+/*.status-form{*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
+
+#status{
+    display: flex;
+    width: 400px;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+#tab3{
+    margin-top: 30px
+}
+
+.criteria{
+    display: flex;
+    margin-bottom: 15px;
+    background-color: #F2F4F8;
+    justify-content: center;
+    border-color: #697077;
+    border-width: 1px;
 }
 
 
