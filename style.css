@@ -1,0 +1,126 @@
+@font-face {
+    font-family: "Source Sans Pro SemiBold";
+    font-style: normal;
+    font-weight: 400;
+  
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Source Sans Pro SemiBold"),
+         /* Если не получилось, загрузит woff2 */
+         url("/fonts/SourceSansPro-SemiBold.ttf") format("ttf");
+  }
+
+@font-face {
+    font-family: "Source Sans Pro Regular";
+    font-style: normal;
+    font-weight: 400;
+  
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Source Sans Pro Regular"),
+         /* Если не получилось, загрузит woff2 */
+         url("/fonts/SourceSansPro-Regular.ttf") format("ttf");
+  }
+
+body{
+    background-color: #DDE1E6;
+    font-family: 'Source Sans Pro SemiBold';
+}
+
+l-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.sidebar{
+    background-color: #F9F9F9;
+    width: 184px;
+    height: 100vh;
+}
+
+.sidebar-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.sidebar-card{
+    display: flex;
+    padding: 12px;
+    background-color: #F2F4F8;
+}
+
+.icon{
+    margin-right: 7px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    background-color: #DDE1E6;
+    min-width: 1500px;
+    height: 100vh;
+    margin-left: 12px;
+}
+
+.main-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.table-header{
+    display: flex;
+    flex-direction: row;
+}
+
+.table-tabs{
+    display: flex;
+    min-width: 500px;
+    justify-content: space-between;
+}
+
+.tabs{
+    display: flex;
+    justify-content: center;
+    width: 82px;
+    height: 48px;
+    
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Source Sans Pro SemiBold';
+    color: black;
+}
+
+.active{
+    a{
+        color: #001D6C;
+    }
+}
+
+.table{
+    width: 100%;
+    text-align: center;
+    border: 15px solid #F2F8F8;
+	border-top: 5px solid #F2F8F8;
+}
+
+.table th{
+    padding: 5px;
+}
+
+.table tbody{
+    background-color: #F9F9F9;
+}
+
+.table td{
+    padding: 5px;
+}
+
+
+
