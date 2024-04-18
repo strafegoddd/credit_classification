@@ -10,15 +10,18 @@
 <body>
     <div class="l-wrapper">
         <div class="text-section">Регистрация</div>
-        <div class="l-form">
-            <span>Фамилия</span>
-            <input type="text" placeholder="Фамилия">
-            <span>Email</span>
-            <input type="text" placeholder="Адрес Email">
+				<form class="l-form">
+						<span>Логин</span>
+            <input type="text" placeholder="Логин">
             <span>Пароль</span>
-            <input type="text" placeholder="Придумайте пароль">
+            <input type="text" placeholder="Пароль">
+            <label for="post">Пост</label>
+            <select name="post" id="post">
+							<option value="expert">Эксперт</option>
+							<option value="user">Пользователь</option>
+						</select>
             <input class="submit" type="submit" value="Регистрироваться">
-        </div>
+				</form>
         <div class="l-links"></div>
         <div class="l-line"><a href="/auth.html">У вас уже имеется аккаунт?</a></div>
         <div class="l-reg-link"></div>

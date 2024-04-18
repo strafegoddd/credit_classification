@@ -19,8 +19,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $creditHistory = $_POST["creditHistory"];
     $area = $_POST["area"];
 
-    // Выполнение вычислений или других операций с данными\
-    if ($creditHistory == 'bad'){
+		if(($applicantIncome == '') || ($coapplicantIncome == '') || ($loanAmount == '') || ($term == '')){
+			echo 'Пустые поля!';
+		}
+		else{
+if ($creditHistory == 'bad'){
         $result = "Не одобрен";
     }
     else {
@@ -67,6 +70,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             }
         }
+		}
+
+    // Выполнение вычислений или других операций с данными\
 
     // Возвращение результата
     echo $result;
