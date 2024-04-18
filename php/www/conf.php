@@ -49,7 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
         else{
                 if ($family == 'merried' || $dependent == 'dependent'){
-                    if ($applicantIncome+$coapplicantIncome <= $loanAmount/$term*39){
+                    if (intval($applicantIncome)+intval($coapplicantIncome) <= intval($loanAmount)/intval($term)*39){
                         $result = "Не одобрен";
                     }
                     else{

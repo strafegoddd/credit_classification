@@ -158,12 +158,70 @@ a{
 
 .criteria{
     display: flex;
+    flex-direction: column;
     margin-bottom: 15px;
     background-color: #F2F4F8;
+    align-items: center;
     justify-content: center;
     border-color: #697077;
     border-width: 1px;
+    /*position: relative;*/
 }
+
+.delCrit{
+    width: 100px;
+}
+
+.status{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    background-color: #F2F4F8;
+    align-items: center;
+    justify-content: center;
+    border-color: #697077;
+    border-width: 1px;
+    /*position: relative;*/
+}
+
+.delStatus{
+    width: 100px;
+}
+
+.critval{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    background-color: #F2F4F8;
+    align-items: center;
+    justify-content: center;
+    border-color: #697077;
+    border-width: 1px;
+    /*position: relative;*/
+}
+
+.delVal{
+    width: 100px;
+}
+
+.odob{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    background-color: #F2F4F8;
+    align-items: center;
+    justify-content: center;
+    border-color: #697077;
+    border-width: 1px;
+    /*position: relative;*/
+}
+
+.neighbors-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 
 
 

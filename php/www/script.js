@@ -15,6 +15,8 @@ function openTab(evt, tabName){
  document.getElementById("tab1").style.display = "block";
  document.getElementsByClassName("tablink")[0].className += " active";
 
+
+
 function sendData(){
     let family = document.getElementById("family").value;
     let dependent = document.getElementById("dependent").value;
@@ -40,4 +42,28 @@ function sendData(){
         applicantIncome + "&coapplicantIncome=" + coapplicantIncome + "&loanAmount=" +
         loanAmount + "&term=" + term + "&creditHistory=" + creditHistory + "&area=" + area);
 }
+
+function working(){
+    fetch("http://localhost:81/credits.php")
+        .then(res => res.json())
+        .then(data => {
+            // let brak = document.getElementById('brak');
+            // let ijd = document.getElementById('ijd');
+            // let obr = document.getElementById('obr');
+            // let work = document.getElementById('work');
+            // let money1 = document.getElementById('money1');
+            // let money2 = document.getElementById('money2');
+            // let creditMoney = document.getElementById('creditMoney');
+            // let brak = document.getElementById('brak');
+            let elements = document.getElementsByClassName('creditBody');
+            for (let i = 0; i < elements.length; i++) {
+                 //elements[i].innerHTML = JSON.stringify(data[i].dish_name);
+                elements[i].innerHTML = JSON.stringify(data[i].dish_name);
+            }
+        })
+}
+
+
+
+
 
