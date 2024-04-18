@@ -26,32 +26,12 @@
                     <img class="icon" src="/img/trending-up-outline.svg" alt="">
                     Критерии
                 </button>
-                <button class="sidebar-card">
-                    <img class="icon" src="/img/folders.svg" alt="">
-                    Возможные значения
-                </button>
-                <button class="sidebar-card">
-                    <img class="icon" src="/img/bookmark-outline.svg" alt="">
-                    Описание критериев одобрения
-                </button>
-                <button class="sidebar-card">
-                    <img class="icon" src="/img/book-outline.svg" alt="">
-                    Проверка полноты знаний
-                </button>
-                <button class="sidebar-card">
-                    <img class="icon" src="/img/time-outline.svg" alt="">
-                    История
-                </button>
-                <button class="sidebar-card">
-                    <img class="icon" src="/img/settings-outline.svg" alt="">
-                    Настройки
-                </button>
             </div>
         </div>
         <div class="main">
             <div class="main-header">
                 <div class="header-buttons">
-                    <a href="/auth.html"><img src="/img/user-thumb.svg" alt="user"></a>
+                    <a href="/auth.php"><img src="/img/user-thumb.svg" alt="user"></a>
                     <img src="/img/button.svg" alt="">
                 </div>
             </div>
@@ -152,13 +132,13 @@
                             <option value="notJob">Безработный</option>
                         </select>
                         <label for="applicantIncome">Доход заявителя:</label>
-                        <input id="applicantIncome" type="number">
+                        <input id="applicantIncome" type="number" required>
                         <label for="coapplicantIncome">Доход созаявителя:</label>
-                        <input id="coapplicantIncome" type="number">
+                        <input id="coapplicantIncome" type="number" required>
                         <label for="loanAmount">Величина займа:</label>
-                        <input id="loanAmount" type="number">
+                        <input id="loanAmount" type="number" required>
                         <label for="term">Срок кредита:</label>
-                        <input id="term" type="number">
+                        <input id="term" type="number" required>
                         <label for="creditHistory">Кредитная история:</label>
                         <select id="creditHistory" name="creditHistory">
                             <option value="good">Хорошая</option>
@@ -186,6 +166,12 @@
                 <div class="criteria">Срок кредита</div>
                 <div class="criteria">Кредитная история</div>
                 <div class="criteria">Область проживания</div>
+								<div id="new" class="criteria"></div>
+								<form onsubmit="event.preventDefault(); addon();">
+									<label for="newCrit"></label>
+									<input id="newCrit" type="text" required>
+									<button type="submit">Добавить</button>	
+								</form>
             </div>
         </div>
     </div>

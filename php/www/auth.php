@@ -19,7 +19,7 @@
             <input class="submit" type="submit" value="Войти">
         </div>
         <div class="l-links"></div>
-        <div class="l-line"><a href="/registration.html">У вас нет аккаунта? Регестрируйтесь</a></div>
+        <div class="l-line"><a href="/registration.php">У вас нет аккаунта? Регестрируйтесь</a></div>
         <div class="l-reg-link"></div>
     </div>
 </body>
